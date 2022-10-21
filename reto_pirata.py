@@ -9,7 +9,7 @@ elif(derecha_izquiera =="izquierda"):
     nadar_esperar = input("¿nadar, esperar o pensar ?: ")
 
     if(nadar_esperar == "nadar"):
-        print("Atacado por una tribu, Game over")
+        print("Atacado por una tribu")
 
         sobrevivir = input("¿Sobrevivio al ataque?")
         if(sobrevivir =="si"):
@@ -31,7 +31,7 @@ elif(derecha_izquiera =="izquierda"):
 
     elif(nadar_esperar == "esperar"):
 
-        eleccion_puerta = input("¿cual puerta eliges? solo puedes elegir (roja, azul y amarilla)")
+        eleccion_puerta = input("¿cual puerta eliges? solo puedes elegir (roja, azul y amarilla): ")
         if(eleccion_puerta == "amarilla"):
             print("Haz ganado!!!! Felicidades")
         
@@ -48,7 +48,18 @@ elif(derecha_izquiera =="izquierda"):
             idea = input("Tiene una idea: ")
 
         if(idea == "si"):
-            print("Bienvenido")
+            print("Ejecuta rapidamente la idea pirata!!")
+            funciono = input("¿Funciono la idea?: ")
+            if(funciono == "si"):
+                print("elige una puerta: ")
+            elif(funciono == "no"):
+                print("Haz sido deborado por las malas decisiones")
+        
+        else:
+            print("opcion no valida")
+        
+
+
         
 
 
