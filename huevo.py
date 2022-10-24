@@ -19,6 +19,7 @@ if(huevo == "si"):
         print("Escoger otro huevo")
         print("Verifica que el huevo este bueno")
         huevo_frito = input("¿El huevo esta bueno?: ")
+        
     if(huevo_frito == "si"):
         print("echar huevo")
         print("condimentar huevo")
