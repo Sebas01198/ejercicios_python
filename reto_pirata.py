@@ -1,4 +1,20 @@
+from xml.dom.minidom import Element
+
+
 print("=================bienvenido a la isla, tu mision sera encontrar el tesoro================")
+
+def elegir_puerta():
+    puerta = input("ingrese una puerta roja amarilla o azul: ")
+    if(puerta == "amarilla"):
+        print("haz ganado, felicidades")
+    elif(puerta == "azul"):
+        print("haz sido deborado, game over")
+    elif(puerta == "roja"):
+        print("te haz quemado game over")
+    else:
+        print("opcion invalida")
+
+    
 
 derecha_izquiera = input("¿derecha o izquiera: ")
 
@@ -17,6 +33,8 @@ elif(derecha_izquiera =="izquierda"):
             huir = input("¿pudiste huir?")
             if(huir == "si"):
                 print("corre y elige una puerta")
+                eleccion_puerta()
+               
 
             elif(huir == "no"):
                 print("estas muerto, Game over")
@@ -71,6 +89,7 @@ elif(derecha_izquiera =="izquierda"):
 
 else:
     print("opcion no valida")
+
 
 
 
