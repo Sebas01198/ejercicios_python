@@ -9,7 +9,7 @@ if (numero > 1):
         resto = numero % i
 
         if(resto == 0):
-            contador = contador + 1
+            contador = contador + 1;
 
     if(contador == 0):
         print(f"El numero {numero} es un numero primo")
