@@ -56,8 +56,9 @@ elif(derecha_izquiera =="izquierda"):
         idea = input("Tiene una idea: ")
         
         while(idea == "no"):
-            idea = input("Tiene una idea: ")
             print("Piensa rapido o moriras")
+            idea = input("Tiene una idea: ")
+            
 
         if(idea == "si"):
             print("Ejecuta rapidamente la idea pirata!!")
