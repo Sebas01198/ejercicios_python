@@ -3,8 +3,9 @@ from xml.dom.minidom import Element
 
 print("=================bienvenido a la isla, tu mision sera encontrar el tesoro================")
 
+#funciones
 def elegir_puerta():
-    puerta = input("ingrese una puerta roja amarilla o azul: ")
+    puerta = input("¿cual puerta eliges? solo puedes elegir (roja, azul y amarilla):")
     if(puerta == "amarilla"):
         print("haz ganado, felicidades")
     elif(puerta == "azul"):
@@ -16,7 +17,7 @@ def elegir_puerta():
 
     
 
-derecha_izquiera = input("¿derecha o izquiera: ")
+derecha_izquiera = input("¿derecha o izquiera?: ")
 
 if(derecha_izquiera == "derecha"):
     print("Caiste en el agujero Game over")
@@ -33,7 +34,7 @@ elif(derecha_izquiera =="izquierda"):
             huir = input("¿pudiste huir?")
             if(huir == "si"):
                 print("corre y elige una puerta")
-                eleccion_puerta()
+                elegir_puerta()
                
 
             elif(huir == "no"):
@@ -49,15 +50,7 @@ elif(derecha_izquiera =="izquierda"):
 
     elif(nadar_esperar == "esperar"):
 
-        eleccion_puerta = input("¿cual puerta eliges? solo puedes elegir (roja, azul y amarilla): ")
-        if(eleccion_puerta == "amarilla"):
-            print("Haz ganado!!!! Felicidades")
-        
-        elif(eleccion_puerta == "azul"):
-            print("Deborado por las bestias, Game over")
-        
-        elif(eleccion_puerta =="roja"):
-            print("Quemado, Game over")
+            elegir_puerta()
 
     elif(nadar_esperar == "pensar"):
         idea = input("Tiene una idea: ")
@@ -69,22 +62,17 @@ elif(derecha_izquiera =="izquierda"):
             print("Ejecuta rapidamente la idea pirata!!")
             funciono = input("¿Funciono la idea?: ")
             if(funciono == "si"):
-                print("elige una puerta: ")
+                elegir_puerta()
             elif(funciono == "no"):
                 print("Haz sido deborado por las malas decisiones")
         
         else:
             print("opcion no valida")
-        
-
-
-        
+    
 
 
     else:
         print("opcion no valida")
-
-
 
 
 else:
